@@ -1,0 +1,222 @@
+:root {
+  --color-primary: #3C4E73;      /* azul profundo */
+  --color-secondary: #405F73;    /* azul médio */
+  --color-background: #C1CBD9;   /* fundo claro */
+  --color-light: #ffffff;
+  --color-dark: #1a3d3f;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-light);
+  color: var(--color-secondary)
+  line-height 1.6;
+}
+header {
+  background-color:var(--color-background);
+  padding: 2rem;
+  text-align: center;
+}
+.imagem-capa {
+  width: 350px;         
+  height: auto;         
+  display: block;
+  margin: 2rem auto;    
+  border-radius: 8px;
+  border-color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease; 
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #1a3d3f;
+}
+header h2 {
+  font-size: 1.2rem;
+  color: #52706e;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.section {
+  margin-bottom: 3rem;
+}
+.hero {
+  background-color: #eef5f3;
+  background-image: url('assets/hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 1rem;
+  border-radius: 25px;
+}
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;  
+}
+.hero-image {
+  flex: 1 1 300px;
+  text-align: center;
+  border-color: #000000;
+}
+.hero-image img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.hero-image .btn {
+  background-color: #277e1c;
+  color: var(--color-light);
+  font-size: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.hero-image .btn:hover {
+  background-color: #83bf71;
+}
+.hero-content {
+  flex: 1 1 400px;
+  text-align: center;
+}
+.hero-content h1 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.hero-content h2 {
+  font-size: 1.2rem;
+  color: #394d4b;
+}
+h3 {
+  color: var(--color-secondary);
+}
+blockquote {
+  background: #eef5f3;
+  padding: 1rem;
+  border-left: 5px solid #1a3d3f;
+  margin: 1rem 0;
+}
+.author-section {
+  padding: 3rem 1rem;
+  background-color: #f5f8fa;
+  border-radius: 8px;
+}
+.author-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.author-photo {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.author-text {
+  flex: 1 1 400px;
+  color: var(--color-dark);
+}
+.author-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+.author-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.imagem-capa-cta {
+  width: 150px;         
+  height: auto;         
+  display: block;
+  margin: 2rem auto;    
+  border-radius: 8px;  
+}
+.section-cta {
+  background-color: var(--color-primary); 
+  color: var(--color-light);
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 700px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.section-cta h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-light);
+}
+.section-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: #e0e6ef;
+}
+.section-cta .btn {
+  background-color: #277e1c;
+  color: var(--color-light);
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.section-cta .btn:hover {
+  background-color: #83bf71;
+}
+.social-icons {
+  margin-top: 1rem;
+}
+.social-icons a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+}
+.social-icons img {
+  width: 28px;
+  height: 28px;
+}
+.dev-icon img {
+  display: inline-block;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+  width: 28px;
+  height: 28px;
+}
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+footer {
+  background: var(--color-secondary);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+footer a {
+  color: #dff7f3;
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
